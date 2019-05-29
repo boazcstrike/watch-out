@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 use App\StreamChunk;
 use App\Observers\StreamChunkObserver;
@@ -16,6 +17,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Schema::defaultStringLength(191);
         StreamChunk::observe(StreamChunkObserver::class);
     }
 
