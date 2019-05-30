@@ -9,7 +9,7 @@
         <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css"> -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Styles -->
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" type="text/css" href="/css/app.css">
 
         <title>{{ config('app.name', 'Laravel') }} | @yield('title')</title>
     </head>
