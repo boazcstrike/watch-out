@@ -16,5 +16,11 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@l.l',
             'email_verified_at' => now()
         ]);
+
+        factory(App\User::class, 1)->create([
+            'name' => 'Boaz Sze',
+            'email' => 'boaz.sze@gmail.com',
+            'email_verified_at' => now()
+        ]);
     }
 }
